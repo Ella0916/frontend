@@ -20,8 +20,10 @@ https://www.w3schools.com/html/html_intro.asp
 > - 텍스트 콘텐츠
 > - 멀티미디어 콘텐츠 : 이미지, 비디오, 오디오 등 
 
+
 ### HTML Basic
 > 기본 구조 Example Link : https://www.w3schools.com/html/html_intro.asp 
+
 
 ### HTML Elements
 > https://www.w3schools.com/html/html_elements.asp
@@ -52,11 +54,14 @@ https://www.w3schools.com/html/html_intro.asp
 > {X = 'Y'} ▶ 이 묶음을 '속성'이라고 한다.<br>
 > Y값은 Value, X값은 name 이라고 한다.
  
+  
 ### HTML Headings
 > h1~h6 : 제목태그 (h > heading)
 
+  
 ### HTML Paragraphs
 > https://www.w3schools.com/html/html_paragraphs.asp
+  
   
 ### HTML Links
 > https://www.w3schools.com/html/html_links.asp
@@ -72,6 +77,7 @@ https://www.w3schools.com/html/html_intro.asp
 > - Domain Name : www.naver.com *www가 서버를 나타냄! 
 > - ex) blog.naver.com/blog/123456 >> 서버 주소 + 상세 도메인 => url
 > - 절대url 과 상대 url의 차이 알기
+  
   
 ### HTML File 경로    
 https://www.w3schools.com/html/html_filepaths.asp
