@@ -51,5 +51,14 @@ https://www.w3schools.com/html/html_intro.asp
 > https://www.w3schools.com/html/html_attributes.asp
 > {X = 'Y'} ▶ 이 묶음을 '속성'이라고 한다.<p>
 > Y값은 Value, X값은 name 이라고 한다.
+ 
+### HTML Headings
+> h1~h6 : 제목태그 (h > heading)
+
+### HTML Paragraphs
+> https://www.w3schools.com/html/html_paragraphs.asp
   
-      
+### HTML Links
+> https://www.w3schools.com/html/html_links.asp
+  
+  
