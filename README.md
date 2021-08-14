@@ -69,6 +69,22 @@ https://www.w3schools.com/html/html_intro.asp
 
 > 인터넷 주소<br> 
 > - IP(Internet Protocol) : 숫자로 구성된 주소 (ex) 192.168.0.1) *원래주소
-> - Domain Name : www.naver.com
-
+> - Domain Name : www.naver.com *www가 서버를 나타냄! 
+> - ex) blog.naver.com/blog/123456 >> 서버 주소 + 상세 도메인 => url
+> - 절대url 과 상대 url의 차이 알기
   
+### HTML File 경로    
+https://www.w3schools.com/html/html_filepaths.asp
+
+절대 vs 상대
+- 경로 위치 표시 방식
+- 경로 표시 기준의 변경 여부
+> 1) 절대경로
+- ex) 대한민국 서울특별시 서초구 ~ 동 대호빌딩 801호 (절대경로방식)
+- 도메인주소 + 상세경로까지 있는 url을 절대경로라고 한다. 
+- ex) https://www.naver.com/blog/image/jpg
+> 2) 상대경로
+- ex) 강남역 11번 출구에서 3분 대호빌딩 (상대경로방식 - 출발지 위치를 기준으로 표기)
+- 가능한 경우 상대 파일 경로를 사용하는 것이 가장 좋습니다.
+- ex) /blog/image.jpg 혹은 image/jpg
+
