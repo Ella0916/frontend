@@ -65,6 +65,8 @@ https://www.w3schools.com/html/html_intro.asp
 ```
 > a : anchor
 > URL(Uniform Resource Locator) : 파일식별자(위치표시), 가장 넓은 의미의 인터넷 주소<br>
+  
+
 > 인터넷 주소<br> 
 > - IP(Internet Protocol) : 숫자로 구성된 주소 (ex) 192.168.0.1) *원래주소
 > - Domain Name : www.naver.com
