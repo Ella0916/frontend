@@ -48,8 +48,8 @@ https://www.w3schools.com/html/html_intro.asp
   
   
 ### HTML Attributes
-> https://www.w3schools.com/html/html_attributes.asp
-> {X = 'Y'} ▶ 이 묶음을 '속성'이라고 한다.<p>
+> https://www.w3schools.com/html/html_attributes.asp<br>
+> {X = 'Y'} ▶ 이 묶음을 '속성'이라고 한다.<br>
 > Y값은 Value, X값은 name 이라고 한다.
  
 ### HTML Headings
@@ -60,5 +60,13 @@ https://www.w3schools.com/html/html_intro.asp
   
 ### HTML Links
 > https://www.w3schools.com/html/html_links.asp
-  
+```
+<a href="url">link text</a>
+```
+> a : anchor
+> URL(Uniform Resource Locator) : 파일식별자(위치표시), 가장 넓은 의미의 인터넷 주소
+> 인터넷 주소 
+> - IP(Internet Protocol) : 숫자로 구성된 주소 (ex) 192.168.0.1) *원래주소
+> - Domain Name : www.naver.com
+
   
