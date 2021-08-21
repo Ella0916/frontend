@@ -10,9 +10,13 @@ www.w3schools.com
 
 https://opentutorials.org/course/1
 
-https://github.com/edu-ministori/frontend_08
+https://github.com/edu-ministori/frontend_08 > 선생님 github주소
+
+https://codesandbox.io/s/itac-08-0ye9v?file=/index.html > 선생님 csb 주소
 
 ## HTML
+
+> 기본구조 만들 때 html:5 + tab 하면 됨
 
 ### Introduxtion
 
@@ -28,8 +32,7 @@ https://www.w3schools.com/html/html_intro.asp
 
 ### HTML Basic
 
-> 기본 구조 Example Link : https://www.w3schools.com/html/html_intro.asp
-> <br>
+> 기본 구조 Example Link : https://www.w3schools.com/html/html_intro.asp > <br>
 
 ### HTML Elements
 
@@ -73,8 +76,7 @@ https://www.w3schools.com/html/html_intro.asp
 
 ### HTML Paragraphs
 
-> https://www.w3schools.com/html/html_paragraphs.asp
-> <br>
+> https://www.w3schools.com/html/html_paragraphs.asp > <br>
 
 ### HTML Links
 
@@ -140,13 +142,64 @@ https://www.w3schools.com/html/html_filepaths.asp
 
   https://www.w3schools.com/html/html_media.asp
   https://www.w3schools.com/tags/tag_video.asp <br>
-  muted & autoplay 쓸 때에는 muted를 반드시 앞에 써야함<br>
+  muted & autoplay 쓸 때에는 muted를 반드시 앞에 써야함<br><br>
 
-  - & > 공백 여러개 띄우고 싶을 때 하는 것
+  & > 공백 여러개 띄우고 싶을 때 하는 것
+
+  ### HTML Forms
+
+  https://www.w3schools.com/html/html_forms.asp
+
+  ### HTML Entity code
+
+  https://www.w3schools.com/html/html_entities.asp
+
+  > 주로 쓰이는 7가지는 기억하는게 좋다.
 
   ### 새로운 CSS 페이지 만들기
 
   https://freebiesbug.com/psd-freebies/website-template/
-  https://www.photopea.com/
+  https://www.photopea.com
 
-  ★숙제 : https://ko.wikipedia.org/wiki/HTML 해당 페이지 만들어보기
+  > UI 분석하기 EX) 02_Home.jpg
+
+  ### HTML Semantics
+
+  https://www.w3schools.com/html/html5_semantic_elements.asp <br>
+  가장 많이 쓰이는 레이아웃 관련 Semantics 요소는 기억하는게 좋다.
+
+  > header, nav, section, article, aside, footer (그림 참고하기)
+
+  ### HTML Block and Inline Elements
+
+  https://www.w3schools.com/html/html_blocks.asp
+
+  > 화면에 표시되는 디자인적 구분에 따라 blocks 또는 inline 요소로 나눈다.
+  > div tag > 아무런 의미 없이 나눌 때 / 디자인적 구분 요소이다.
+  > span tag > div tage와 반대되는 태그로, 줄 바꿈x & 전체ss공간 차지 x.
+
+  > <b>포함관계</b>
+
+  > - 블럭요소 : 다른 블럭요소, 인라인 요소와 컨텐츠를 포함할 수 있다.
+  > - 인라인요소 : 다른 인라인 요소와 컨텐츠를 포함할 수 있다. (블럭요소는 포함x)
+  > - 예외 : a - 인라인 요소이지만 블럭 요소를 포함할 수 있다.
+
+  > figure 요소 : 그래픽 요소를 감쌀 때 사용한다.
+
+  ### HTML id & Class Attributes
+
+  https://www.w3schools.com/html/html_id.asp
+  https://www.w3schools.com/html/html_classes.asp
+
+  > id attributes
+  >
+  > - id 속성이 붙는 이름은 한 문서 안에서 고유해야 함 (한 번만 사용 가능함) \* 화면상 오류는 없음
+  > - id는 한 대상의 html element에 하나의 이름만 지정할 수 있음 \* 화면상 오류 있음
+
+  > class attributes
+  >
+  > - class 속성이 붙는 이름은 한 문서 안에서 여러번 중복 사용할 수 있다.
+  > - class는 한 대상의 html elements에 여러개의 이름을 지정할 수 있음
+  > - class는 여러거 만들어 놓고 각 elements마다 필요한 class를 여러개 넣어서 쓸 수 있는 것이다.
+
+★숙제 : https://ko.wikipedia.org/wiki/HTML 해당 페이지 만들어보기
