@@ -113,6 +113,20 @@ https://www.w3schools.com/html/html_filepaths.asp
   Table generator : https://www.tablesgenerator.com/html_tables <br><br>
   요즘에는 모바일 반응형까지 고려하여 코드를 짠다. but table은 가로로 좁아지는 형태만 가능함 (table은 많이 쓰이지 x)
   
+  ### HTML Images
+  > alt attribute : alternative 의 약자로, 이미지가 화면에 보이지 않을 때 나타나는 텍스트 & 웹 접근성을 위함\
+  
+  ### HTML Videos
+  https://www.w3schools.com/html/html_media.asp
+  https://www.w3schools.com/tags/tag_video.asp <br>
+  muted & autoplay 쓸 때에는 muted를 반드시 앞에 써야함<br>
+  * & > 공백 여러개 띄우고 싶을 때 하는 것 
+  
+  
+  ### 새로운 CSS 페이지 만들기
+  https://freebiesbug.com/psd-freebies/website-template/
+  https://www.photopea.com/
+  
   
   ★숙제 : https://ko.wikipedia.org/wiki/HTML 해당 페이지 만들어보기
   
