@@ -9,6 +9,8 @@ www.w3schools.com
 
 https://opentutorials.org/course/1
 
+https://github.com/edu-ministori/frontend_08
+
 ## HTML
 
 ### Introduxtion
@@ -94,3 +96,24 @@ https://www.w3schools.com/html/html_filepaths.asp
 - 가능한 경우 상대 파일 경로를 사용하는 것이 가장 좋습니다.
 - ex) /blog/image.jpg 혹은 image/jpg
 
+  
+  # frontend_0821
+  
+  ### HTML Link Bookmark
+  https://www.w3schools.com/html/html_links_bookmarks.asp <br>
+  컨텐츠의 양이 적을 때에는 원페이지 사이트로 북마크를 주기도 함
+  
+  ### HTML List
+  https://www.w3schools.com/html/html_lists.asp <br>
+  복잡한 목록의 경우 같은수준 상위항목 > 같은수준 하위항목 순서로 코드를 입력하는 방법이 좋습니다.
+  > 중첩목록(Nested List)
+  
+  ### HTML Tables
+  https://www.w3schools.com/html/html_tables.asp <br>
+  Table generator : https://www.tablesgenerator.com/html_tables <br><br>
+  요즘에는 모바일 반응형까지 고려하여 코드를 짠다. but table은 가로로 좁아지는 형태만 가능함 (table은 많이 쓰이지 x)
+  
+  
+  ★숙제 : https://ko.wikipedia.org/wiki/HTML 해당 페이지 만들어보기
+  
+  
