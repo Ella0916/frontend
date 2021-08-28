@@ -1,0 +1,15 @@
+/* css는 html 마크업 순서에 맞게 작업하는 것이 편하다*/
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+/* font-family: 'Montserrat', sans-serif; */
+/*  font-family: 'Noto Sans KR', sans-serif; */
+
+.section-heading {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.6;
+}
+.section-paragraph {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.6;
+}

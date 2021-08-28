@@ -14,6 +14,8 @@ https://github.com/edu-ministori/frontend_08 > 선생님 github주소
 
 https://codesandbox.io/s/itac-08-0ye9v?file=/index.html > 선생님 csb 주소
 
+https://www.dbcut.com/bbs/index.php > 홈페이지 샘플들 볼 수 있는 사이트
+
 ## HTML
 
 > 기본구조 만들 때 html:5 + tab 하면 됨
@@ -216,5 +218,76 @@ https://www.w3schools.com/html/html_filepaths.asp
 
 https://www.w3schools.com/css/css_syntax.asp
 
-> Selecter { Property : Value; } 중괄호 > Decoration <br>
+> Selecter { Property : Value; } // 중괄호를 > Decoration 이라고 한다.
+
 > 선언 블록에는 세미콜론으로 구분된 하나 이상의 선언이 있을 수 있다.
+
+### CSS How to
+
+https://www.w3schools.com/css/css_howto.asp
+
+> internal 방식을 쓰는 것은 권장하지 않음.
+
+> 자바는 자바, css는 css, html은 html 코드만 넣어서 개별 파일로 작업한는 것이 좋다.
+
+### CSS Selectors
+
+https://www.w3schools.com/css/css_selectors.asp
+
+> simple selector 를 잘 활용하는 것이 중요하다.
+
+### CSS Comments
+
+https://www.w3schools.com/css/css_comments.asp
+
+### CSS Text
+
+> 단락의 개념
+> https://www.w3schools.com/css/css_text.asp
+
+> p = color : 글꼴 색 바꾸는 것
+>
+> p = text-align : 텍스트 정렬 변경하는 것
+>
+> p = line-hight : 텍스트의 줄높이를 변경하는 것 (배수로 표시하는게 좋음 > 폰트 사이즈 변경에 대비)
+>
+> p = letter-spacing : 자간을 변경하는 것
+>
+> p = white-space : 줄바꿈을 제어하는 것 (줄바뀌지 않게 하는 것 > 가로스크롤만 생기게 하는 것)
+
+### CSS 상속
+
+> 부모요소에 적용된 CSS 속성이 자식요소에 적용되는 것
+
+### CSS Font
+
+> 글자 자체에 대한 성질
+> https://www.w3schools.com/css/css_font.asp
+
+> serif : 명조체
+
+> sans-serif : 고딕체
+
+### CSS web Font
+
+> 웹에서 사용하는 폰트는 브라우저에서 랜더되기 때문에 기존에는 사용자 pc에 설치되어 있는 폰트를 사용함.<br>
+> 사용자 pc에 있는 폰트를 찾지 않고, 서버에 폰트를 저장해서 사용하는 방식 > 웹폰트 방식<br>
+
+> 웹폰트 서비스
+>
+> - 구글폰트 (영문 + 한글) https://fonts.google.com/?subset=korean
+> - 눈누폰트 (한글) https://noonnu.cc/
+
+### font-family
+
+> 항상 폰트 목록 끝에 기본 폰트 이름을 입력해야 한다.
+>
+> - 고딕 : sans-serif / 명조 : serif
+>
+> font-size
+>
+> font style : italic > 폰트 기울임체
+>
+> font-weight
+>
+> - 100,200,300 ... : 숫자로 표시
