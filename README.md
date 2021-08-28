@@ -291,3 +291,15 @@ https://www.w3schools.com/css/css_comments.asp
 > font-weight
 >
 > - 100,200,300 ... : 숫자로 표시
+
+### CSS Link
+
+https://www.w3schools.com/css/css_link.asp
+
+> a : link >> 보통 상태 , 아직 클릭하기 전의 상태
+>
+> a : visited >> 이미 클릭한 링크일 경우
+>
+> a : hover >> 마우스 오버 했을 때
+>
+> a : active >> 누리는 동작 (클릭하고 클릭을 떼었을 때 ! )
