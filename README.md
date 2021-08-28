@@ -366,7 +366,11 @@ https://www.w3schools.com/css/css_dimension.asp
 
 ## background
 
-> url() : 괄호가 들어가는 걸 함수 라고 한다.
+https://www.w3schools.com/css/css_background.asp
+
+> background-image : url() \*괄호가 들어가는 걸 함수 라고 한다.
+>
+> background_color
 
 ## color 표현방식
 
@@ -380,5 +384,10 @@ https://www.w3schools.com/css/css_dimension.asp
 >
 > color 코드 값
 >
-> - 10진수 표현 : rgb (255, 255, 255)
+> - 10진수 표현 : rgb (255, 255, 255) \*0-225
 > - 16진수 표현 : #1a9cf0
+>   색 찾는 방법 : color picker
+
+## box-sizong
+
+> box-sizong : border-box => width 가 전체 박스의 가로 길이가 된다.

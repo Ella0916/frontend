@@ -140,16 +140,42 @@ table {
 .gnb-link:hover {
   color: #10c9c3;
 }
+.section01 {
+  background-color: #f6f6f6;
+  /* 높이가 320이면 그냥 패딩값을 160으로 줘도 되는거 아닌지? */
+  height: 320px;
+  padding-top: 100px;
+  box-sizing: border-box;
+}
 
 .section-heading {
   text-align: center;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 20px;
+  /* line-hight 말고 margin-bottom: 35px; 로 할 수도 있다 */
   line-height: 2.8;
 }
 .section-paragraph {
   text-align: center;
   font-family: "Montserrat", sans-serif;
+  padding: 0 200px;
   line-height: 1.6;
+}
+/* image : 340*300 */
+.figure {
+  width: 340px;
+  height: 300px;
+}
+.figure-img {
+  width: 340px;
+  height: 300px;
+}
+.figure-video {
+  width: 340px;
+  height: 300px;
+}
+.footer {
+  background-color: #141414;
+  color: #ffffff;
 }
