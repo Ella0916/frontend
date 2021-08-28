@@ -174,9 +174,15 @@ https://www.w3schools.com/html/html_filepaths.asp
 
   https://www.w3schools.com/html/html_blocks.asp
 
+  > 영역의 특성
+
+  > - 블럭요소 : 가로길이 - 부모에 채워짐 / 세로길이 - 자식요소에 맞춰짐
+  > - 인라인요소 : 가로길이와 세로길이 모두 자식요소에 맞춰짐
+  > - 예외 : a - 인라인 요소이지만 블럭 요소를 포함 가능
+
   > 화면에 표시되는 디자인적 구분에 따라 blocks 또는 inline 요소로 나눈다.
   > div tag > 아무런 의미 없이 나눌 때 / 디자인적 구분 요소이다.
-  > span tag > div tage와 반대되는 태그로, 줄 바꿈x & 전체ss공간 차지 x.
+  > span tag > div tag와 반대되는 태그로, 줄 바꿈x & 전체공간 차지 x. (옆으로 나열됨)
 
   > <b>포함관계</b>
 
@@ -203,3 +209,12 @@ https://www.w3schools.com/html/html_filepaths.asp
   > - class는 여러거 만들어 놓고 각 elements마다 필요한 class를 여러개 넣어서 쓸 수 있는 것이다.
 
 ★숙제 : https://ko.wikipedia.org/wiki/HTML 해당 페이지 만들어보기
+
+## CSS
+
+### CSS 구문
+
+https://www.w3schools.com/css/css_syntax.asp
+
+> Selecter { Property : Value; } 중괄호 > Decoration <br>
+> 선언 블록에는 세미콜론으로 구분된 하나 이상의 선언이 있을 수 있다.
