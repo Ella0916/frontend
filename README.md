@@ -194,21 +194,21 @@ https://www.w3schools.com/html/html_filepaths.asp
 
   > figure 요소 : 그래픽 요소를 감쌀 때 사용한다.
 
-  ### HTML id & Class Attributes
+### HTML id & Class Attributes
 
-  https://www.w3schools.com/html/html_id.asp
-  https://www.w3schools.com/html/html_classes.asp
+https://www.w3schools.com/html/html_id.asp
+https://www.w3schools.com/html/html_classes.asp
 
-  > id attributes
-  >
-  > - id 속성이 붙는 이름은 한 문서 안에서 고유해야 함 (한 번만 사용 가능함) \* 화면상 오류는 없음
-  > - id는 한 대상의 html element에 하나의 이름만 지정할 수 있음 \* 화면상 오류 있음
+> id attributes
+>
+> - id 속성이 붙는 이름은 한 문서 안에서 고유해야 함 (한 번만 사용 가능함) \* 화면상 오류는 없음
+> - id는 한 대상의 html element에 하나의 이름만 지정할 수 있음 \* 화면상 오류 있음
 
-  > class attributes
-  >
-  > - class 속성이 붙는 이름은 한 문서 안에서 여러번 중복 사용할 수 있다.
-  > - class는 한 대상의 html elements에 여러개의 이름을 지정할 수 있음
-  > - class는 여러거 만들어 놓고 각 elements마다 필요한 class를 여러개 넣어서 쓸 수 있는 것이다.
+> class attributes
+>
+> - class 속성이 붙는 이름은 한 문서 안에서 여러번 중복 사용할 수 있다.
+> - class는 한 대상의 html elements에 여러개의 이름을 지정할 수 있음
+> - class는 여러거 만들어 놓고 각 elements마다 필요한 class를 여러개 넣어서 쓸 수 있는 것이다.
 
 ★숙제 : https://ko.wikipedia.org/wiki/HTML 해당 페이지 만들어보기
 
@@ -303,3 +303,82 @@ https://www.w3schools.com/css/css_link.asp
 > a : hover >> 마우스 오버 했을 때
 >
 > a : active >> 누리는 동작 (클릭하고 클릭을 떼었을 때 ! )
+>
+> Link 사용을 위한 규칙
+>
+> - 위 4가지 상태 항목을 모두 써야하는 규칙이 있지만, 기본 a태그에 대한 서식을 정해두고, <br>
+
+    그 아래에 상태 항목을 추가해 나가는 방식으로 하면 된다.
+
+> \*\* 기존 html 코드가 가지고 있는 css적 요소를 제거하고 새로 css 적용을 하기 위해 리셋 가능하다.
+> https://meyerweb.com/eric/tools/css/reset/
+
+### CSS Image
+
+> 이미지의 크기 변경하기 (나중에 다시 설명)
+
+### CSS Box Model (각 요소별 박스모델을 만들고 해당 박스를 레이아웃 하는 것.)
+
+https://www.w3schools.com/css/css_boxmodel.asp
+
+> - content : width or height (컨텐츠의 높이나 너비가 되는 것)
+> - padding : 안쪽 여백
+> - border : 테두리
+> - margin : 바깥 여백
+
+### CSS Height and Width
+
+https://www.w3schools.com/css/css_dimension.asp
+
+> - 블럭요소의 가로길이와 세로길이 적용시
+> - auto : 요소의 기본 특성을 따라간다. / 디폴트 값 (적용하지 않은 상태와 같음)
+> - px : px 값으로 고정된 크기를 가짐
+> - % : 부모요소를 기준으로 특정 비율만큼 설정<br>
+
+        (hight 는 %가 쓰이지 않음. 자식요소에 맞춰지는 속성이기 때문에)
+
+> - 인라인 요소의 가로길이 / 세로길이는 적용되지 않은 ex) span 에는 적용 안됨 > > > 꼭 알고 가야 하는 기본 배경
+>   영역의 특성
+>
+> - 블럭요소 : 가로길이 - 부모에 채워짐 / 세로길이 - 자식요소에 맞춰짐
+> - 인라인요소 : 가로길이와 세로길이 모두 자식요소에 맞춰짐
+> - 예외 : a - 인라인 요소이지만 블럭 요소를 포함 가능
+
+## padding
+
+> - padding-top / padding-right / padding-bottom / padding left
+> - padding : 10px 20px 30px 40px;
+> - padding : 10px 20px 30px;
+> - padding : 10px 20px;
+> - padding : 10px;
+
+## margin
+
+> 마진 겹침 : 박스의 마진이 상하배치 되어있을 때 마진이 한쪽만 적용되는 현상
+>
+> - 두 박스 모두 마진 적용하지 않고 한쪽에만 마진을 적용하게 한다.
+
+## border
+
+> border : 1px solid red;
+>
+> boder-top / boder-right / boder-bottom / boder-left
+
+## background
+
+> url() : 괄호가 들어가는 걸 함수 라고 한다.
+
+## color 표현방식
+
+> RGB : red & green & blue - 가산 총합
+>
+> - 스크린에서 color 표현 (색을 섞을수록 밝아짐)
+>
+> CMYK : cyan & magenta & yellow & black - 감산혼합
+>
+> - 프린터에서 color 표현 (색을 섞을수록 어두워짐)
+>
+> color 코드 값
+>
+> - 10진수 표현 : rgb (255, 255, 255)
+> - 16진수 표현 : #1a9cf0
