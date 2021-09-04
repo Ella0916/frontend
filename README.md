@@ -346,7 +346,7 @@ https://www.w3schools.com/css/css_dimension.asp
 > - 인라인요소 : 가로길이와 세로길이 모두 자식요소에 맞춰짐
 > - 예외 : a - 인라인 요소이지만 블럭 요소를 포함 가능
 
-## padding
+### padding
 
 > - padding-top / padding-right / padding-bottom / padding left
 > - padding : 10px 20px 30px 40px;
@@ -354,19 +354,19 @@ https://www.w3schools.com/css/css_dimension.asp
 > - padding : 10px 20px;
 > - padding : 10px;
 
-## margin
+### margin
 
 > 마진 겹침 : 박스의 마진이 상하배치 되어있을 때 마진이 한쪽만 적용되는 현상
 >
 > - 두 박스 모두 마진 적용하지 않고 한쪽에만 마진을 적용하게 한다.
 
-## border
+### border
 
 > border : 1px solid red;
 >
 > boder-top / boder-right / boder-bottom / boder-left
 
-## background
+### background
 
 https://www.w3schools.com/css/css_background.asp
 
@@ -374,7 +374,7 @@ https://www.w3schools.com/css/css_background.asp
 >
 > background_color
 
-## color 표현방식
+### color 표현방식
 
 > RGB : red & green & blue - 가산 총합
 >
@@ -390,17 +390,33 @@ https://www.w3schools.com/css/css_background.asp
 > - 16진수 표현 : #1a9cf0
 >   색 찾는 방법 : color picker
 
-## box-sizong
+### box-sizong
 
 > box-sizong : border-box => width 가 전체 박스의 가로 길이가 된다.
 
-## 0904
+### 0904
 
 > 레이아웃 마크업을 할 때에는 연결고리가 1개로 인접하게 묶어주는게 좋다.
 
-## css flexbox
+### css flexbox
 
 https://www.w3schools.com/css/css3_flexbox.asp
+
+> 박스 레이아웃 구성과 관련된 css 속성
+> flex 적용
+>
+> - display : flex;
+>
+>   부모요소에 적용하는 속성이다.
+>
+> - flex-dircetion : flex 박스의 배치 방향
+> - justify-content : 가로 방향 정렬
+> - align-items : 세로 방향 정렬
+>
+> 자식요소에 적용하는 속성
+> flex : 1; : 빈공간에 박스를 채움
+
+### my write
 
 > 마크업한 요소드를 가로배치할 때 쓰이는 것
 > flot 이라는 다른 요소가 있는데 나중에 공부하기
@@ -409,7 +425,7 @@ https://www.w3schools.com/css/css3_flexbox.asp
 > row -reverse > 자식요소들의 순서가 역순으로 바뀌는 것
 > flex property 는 사용하지 않는것을 추천한다.
 
-## css container
+### css container
 
 > justify-content : 레이아웃 정렬 (왼쪽 / 가운데 / 오른쪽 )
 > flex-direction : 박스가 아래로 내려가는게 아니라 축이 돌아가는 것 (중요)
@@ -418,16 +434,66 @@ https://www.w3schools.com/css/css3_flexbox.asp
 > justify-content: space-around >> 각 박스의 여백을 동일하게 지정해줌
 > justify-content: space-between >> 박스 사이의 공백을 같게 해줌
 
-## css overflow
+### css overflow
 
 https://www.w3schools.com/css/css_overflow.asp
 
 > 비율을 맞출 때 길이가 작은 쪽의 길이 기준으로 넣고 넘치는 부분은 hidden 으로 해서 안보이게 한다.
 
-## 반응형 디자인
+### 반응형 디자인
 
 https://www.w3schools.com/css/css_rwd_intro.asp
 
+> osmu : one source multi
+> 한 HTML 페이지에서 다양한 CSS를 통해 PC, mobile phone 레이아웃 구성을 표현
 > 브라우저의 '가로'길이에 반응한다 !
 > 반응형 웹 & 적응형 웹 두가지가 있다.
-> osmu : one source multi use >> 원소스면 반응형, 아니면 적응형
+>
+> - Viewport : meta name="viewport" content="width=device-width, initial-scale=1.0"
+> - Media Query
+>   - break point : 레이아웃이 변경되는 시점
+>   - (320px ~ 640 px : mp ) (641px ~ 1024 : tb) (1025px ~ 1920 px : p.c) >> 보통 이렇게 많이 나눈다.
+
+    - (320px~799px : mp) (800px ~ 1920px : pc) 이렇게 두가지로 나누기도 한다.
+    - 마지막에 쓰여있는 코드가 최종으로 적용되기 때문에 순서를 큰범위>작은범위로 써줘야 한다 *열린범위로 할 경우*
+
+```
+@media screen-미디어형태를 쓰써주면 된다- and (max-width 1920px) {
+  pc 스타일 css code
+  }
+@media screen and (max-width 1024px) {
+ tablet 스타일 css code
+}
+@media screen and (max-width 640px) {
+  mobile phone 스타일 css code
+}
+```
+
+> - 해상도 - mobile phone : 320px ~ 640 px (짧은쪽 기준으로 맞추는게 나중에 키우기 편리하다.) - tablet : 768px ~ 1024 px (테블릿이라도 이거보다 해상도 크면 pc화면이 뜰 수 있다.) - pc : 1024px ~ 1920 px
+>   css의 해상도 범위를 지정할 때 열린범위로 지정해 주어야 누락되는 해상도가 없게된다.
+> - Fluid Layout (유동형 레이아웃)
+> - % 단위를 활용해서 부모요소의 크기가 변경될 때, 자식요소의 크기도 같이 부드럽게 변하도록 하는 레이아웃
+
+### Combinator Selector (조합선택자)
+
+> 2개 이상의 선택자를 조합해서 사용하는 형태
+
+```
+* 여러개 선택자에 모두 동일한 css를 적용하라는 이야기
+.name1,.name2 {
+
+}
+
+* 여러개의 선택자를 동시에 가지고 있는 경우
+.name1.name2 : element가 class이름을 name1과 name2를 동시에 가지고 있는 경우
+#name1.name2 : id가 name1이면서 동시에 class 이름이 name2인 경우
+div.name1 : div element가 name1 class이름을 가지고 있는 경우
+
+* 자손 요소 선택
+.name1 .name2 : class이름이 name1인 요소의 자손 요소 중 class 이름이 name2인 요소를 선택하라는 뜻
+
+* 자식 요소 선택
+.name > name2 : class이름이 name1인 요소의 자식요소 중 class 이름이 name2인 요소를 선택
+
+
+```
