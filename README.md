@@ -12,9 +12,11 @@ https://opentutorials.org/course/1
 
 https://github.com/edu-ministori/frontend_08 > 선생님 github주소
 
-https://codesandbox.io/s/itac-08-0ye9v?file=/index.html > 선생님 csb 주소
+https://codesandbox.io/s/itac-08-0ye9v?file=/page.html > 선생님 csb 주소
 
-https://www.dbcut.com/bbs/index.php > 홈페이지 샘플들 볼 수 있는 사이트
+https://www.dbcut.com/bbs/index.php > 홈페이지 샘플들 볼 수 있는
+
+https://caniuse.com/ > 브라우저 지원여부에대해 확인해 주는 사이트
 
 ## HTML
 
@@ -391,3 +393,41 @@ https://www.w3schools.com/css/css_background.asp
 ## box-sizong
 
 > box-sizong : border-box => width 가 전체 박스의 가로 길이가 된다.
+
+## 0904
+
+> 레이아웃 마크업을 할 때에는 연결고리가 1개로 인접하게 묶어주는게 좋다.
+
+## css flexbox
+
+https://www.w3schools.com/css/css3_flexbox.asp
+
+> 마크업한 요소드를 가로배치할 때 쓰이는 것
+> flot 이라는 다른 요소가 있는데 나중에 공부하기
+
+> row > flex컨테이너의 자식요소들을 가로배치 하는 것 \*기본
+> row -reverse > 자식요소들의 순서가 역순으로 바뀌는 것
+> flex property 는 사용하지 않는것을 추천한다.
+
+## css container
+
+> justify-content : 레이아웃 정렬 (왼쪽 / 가운데 / 오른쪽 )
+> flex-direction : 박스가 아래로 내려가는게 아니라 축이 돌아가는 것 (중요)
+> 위의 문제를 align-items 로 세로방향 배치를 할 수 있음
+> align-items : center; + justify-content : center; >> 가로세로 중앙정렬 됨 !
+> justify-content: space-around >> 각 박스의 여백을 동일하게 지정해줌
+> justify-content: space-between >> 박스 사이의 공백을 같게 해줌
+
+## css overflow
+
+https://www.w3schools.com/css/css_overflow.asp
+
+> 비율을 맞출 때 길이가 작은 쪽의 길이 기준으로 넣고 넘치는 부분은 hidden 으로 해서 안보이게 한다.
+
+## 반응형 디자인
+
+https://www.w3schools.com/css/css_rwd_intro.asp
+
+> 브라우저의 '가로'길이에 반응한다 !
+> 반응형 웹 & 적응형 웹 두가지가 있다.
+> osmu : one source multi use >> 원소스면 반응형, 아니면 적응형
