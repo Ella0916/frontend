@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // if 구문
+      let a = 5;
+      let b = 3;
+
+      if (a > 3) {
+        console.log("참");
+      }
+      /* 구분선  */
+      if (a > 3 && b > 3) {
+        console.log("&&참");
+      } else {
+        console.log("&&거짓");
+      }
+      /* 구분선  */
+      if (a - 1) {
+        console.log("-참");
+      } else {
+        console.log("-거짓");
+      }
+      /*값이 0이면 거짓, 그 이외의 수는 참으로 인식함 */
+      /* 구분선  */
+      if (b > 5) {
+        console.log("5보다 큼");
+      } else if (b > 4) {
+        console.log("4보다 큼");
+      } else if (b > 3) {
+        console.log("3보다 큼");
+      } else {
+        console.log("3보다 작거나 같음");
+      }
+      /* 구분선  */
+    </script>
+  </body>
+</html>

@@ -163,3 +163,81 @@ element.innerHTML = "<img = src='picture.jpg'>"
 - ==, === : 데이터 타입 비교 여부에 따라서 다른 결과를 도출한다.
 
 - 비교연산의 결과는 논리 데이터가 출력된다 : true 또는 false 이다.
+
+### 논리 연산자
+
+- 여러개의 비교식을 연결해서 연산할 때 사용
+- 논리 데이터를 연산할 때 사용
+
+> &&(and) : &&로 연결되는 비교식 또는 논리데이터가 모두 참일 때 전제가 참
+
+```
+true && truw => true
+true && false => false
+3 < 5 && 10 < 12 => true
+```
+
+| : pipe line
+
+> || (or) : || 로 연결되는 비교식 또는 논리데이터가 하나라도 참이면 전제가 참
+
+```
+true || true =>true
+true || false =>true
+3<5 || 10>12 => true
+```
+
+## 명령문(구문) syntax
+
+https://www.w3schools.com/js/js_if_else.asp
+
+- 프로그램 실행 흐름을 제어 역할
+
+### 1) 조건문/분기문
+
+> if 구문
+
+```
+if(conditions){
+  // 코드블럭 1
+}
+---------------------------------
+if(conditions){
+  // 코드블럭 1
+}
+else {
+// 코드블럭 2
+}
+----------------------------------
+if(condition 1) {
+  //코드블럭1
+} else if (condition 2) {
+  // 코드블럭 2
+} else {
+  // 코드블럭 3
+}
+
+- else if 블럭은 필요에 따라 여러개 쓸 수 있음
+- else는 마지막에 한 번 쓴다.
+```
+
+> conditions 식의 결과가 true이면 실행코드 블럭을 실행, false 이면 실행하지 않음.
+>
+> conditions : 결과가 true / false가 나오는 식 ex) 비교식, 논리연산 등..
+> conditions에 그냥 true 나 false가 들어가도 됨 \*문법상은 괜찮음 but 실행은 되지 않음.
+>
+> 0 : false
+>
+> 그 외의 정수 : true (1~~~ , -1 ~~~ )
+
+> if 사용법
+>
+> - else if() {} : 필요한 개수만큼 사용 가능]
+> - else {} : 멘마지막 부분에 사용
+
+> swich 구문
+> https://www.w3schools.com/js/js_switch.asp
+>
+> - expressions 식의 결과에 따라 여러 갈래로 분기함.
+
+### 2) 반복문
