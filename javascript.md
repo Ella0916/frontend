@@ -196,6 +196,7 @@ https://www.w3schools.com/js/js_if_else.asp
 ### 1) 조건문/분기문
 
 > if 구문
+> https://www.w3schools.com/js/js_if_else.asp
 
 ```
 if(conditions){
@@ -239,5 +240,31 @@ if(condition 1) {
 > https://www.w3schools.com/js/js_switch.asp
 >
 > - expressions 식의 결과에 따라 여러 갈래로 분기함.
+>
+> - expressions : 결과는 숫자 or 문자의 형태임 (true / false 와는 관계가 없음.)
+
+```
+switch(expressions) {
+  case '결과값1' :
+  코드블럭1;
+  break;
+
+  case '결과값2' :
+  코드블럭2;
+  break;
+
+  case '결과값3' :
+  코드블럭3;
+  break;
+
+  default :
+  코드블럭4;
+}
+```
 
 ### 2) 반복문
+
+> for loop
+> https://www.w3schools.com/js/js_loop_for.asp
+>
+> - 특정 횟수만큼 반복 실행

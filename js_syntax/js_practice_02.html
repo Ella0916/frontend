@@ -39,6 +39,75 @@
         console.log("3보다 작거나 같음");
       }
       /* 구분선  */
+      /* switch 구문  */
+      let day = "";
+      switch (new Date().getDay()) {
+        case 0:
+          day = "일";
+          break;
+        case 1:
+          day = "월";
+          break;
+        case 2:
+          day = "화";
+          break;
+        case 3:
+          day = "수";
+          break;
+        case 4:
+          day = "목";
+          break;
+        case 5:
+          day = "금";
+          break;
+        case 6:
+          day = "토";
+          break;
+      }
+      console.log(day);
+
+      /* if 구문 > swich 구문으로 바꿀 수 있기도, 없기도 함*/
+      /* swich 구문 > if 구문으로 무조건 바꿀 수 있음*/
+
+      /*if 구문으로 바꿔보기*/
+      let today = new Date().getDay();
+      if (today === 0) {
+        day = "일";
+      } else if (today === 1) {
+        day = "월";
+      } else if (today === 2) {
+        day = "화";
+      } else if (today === 3) {
+        day = "수";
+      } else if (today === 4) {
+        day = "목";
+      } else if (today === 5) {
+        day = "금";
+      } else if (today === 6) {
+        day = "토";
+      } else {
+        day = "Have a good day";
+      }
+      console.log(day);
+
+      /* 반복문 예제  */
+      for (let i = 0; i < 10; i++) {
+        console.log(i);
+      }
+
+      let sum = 0;
+      /*구하려는 값을 일단 초기화 시켜준다.*/
+      for (let i = 1; i <= 10; i++) {
+        sum = sum + i;
+      }
+      console.log(sum);
+
+      /*반복문 활용해서 구구단 만들기*/
+      let gugudan = 0;
+      for (let i = 1; i <= 9; i++) {
+        gugudan = 2 * i;
+        console.log(' 2 × ' + i '=' + gugudan);
+      }
     </script>
   </body>
 </html>
