@@ -1,0 +1,36 @@
+>> 배열
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <script>
+      const number = [1, 2, 3, 4, 5];
+
+      console.log(number[0]); // 인덱스 넘버는 항상 0으로 시작한다.
+      console.log(number[1]);
+      // 구분선 아래부터 루프 사용해서 반복 출력하기 //
+
+      for (let i = 0; i < 5; i++) {
+        console.log(number[i]);
+      }
+
+      // 배열요소 변경
+
+      number[2] = 10; // const 는 변수를 바꿀 수 없는데 어떻게 바꾸늕; ? 의문
+      console.log(number[2]); // 그런데 출력해보니 변수가 바뀜! why ??
+
+      // number = [6, 7, 8, 9, 10]; > 이렇게 집합 형태의 배열을 바꿔버릴 경우에 오류가 남 > 배열변경 오류
+
+      // 따라서  배열변수는 값이 담겨있는 원소의 주소를 나타내는 것이기 때문에 배열을 바꿀 수는 없지만 원소는 바꿀 수 있음
+      // ** 배열이 통째로 바뀌면 단 되다는 말임**
+      // 배열을 바꿔야 한다면 let을 사용해야 한다.
+
+      // 배열 변수 전체 출력
+      console.log(number);
+    </script>
+  </head>
+  <body></body>
+</html>
