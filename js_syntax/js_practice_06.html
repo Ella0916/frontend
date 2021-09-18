@@ -1,0 +1,34 @@
+>> class
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <script>
+      class Person {
+        constructor(name, age) {
+          this.name = name;
+          this.age = age;
+        }
+        print() {
+          console.log(this.name + " : " + this.age);
+        }
+      }
+
+      let tom = new Person("Tom", 20);
+      let ella = new Person("Ella", 25);
+      // tom 과 ella를 객체로 선언을 해준 것
+
+      console.log(tom);
+      console.log(ella);
+      // 통으로 출력하는 것
+
+      tom.print();
+      ella.print();
+      // 프린트 함수를 따로 만들어서 값을 출력한 것
+    </script>
+  </head>
+  <body></body>
+</html>

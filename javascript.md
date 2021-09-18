@@ -72,6 +72,18 @@ https://www.w3schools.com/js/js_let.asp
 - 한번 값을 초기화하면 변경할 수 없음
   > ES5 버전에서는 일반 변수 var 만 존재 , ES6 일반변수 let, 상수변수 const 가 추가됨.
 
+### 변수 scope (접근 가능 범위)
+
+https://www.w3schools.com/js/js_scope.asp
+
+> Global Scope (전역범위)
+>
+> Function Scope (함수범위)
+>
+> Block Scope (블럭범위)
+>
+> var (ES5) 키워드는 Block Scope 개념이 적용되지 않고 전역변수처럼 인식됨
+
 ### 데이터 타입 (데이터의 종류)
 
 https://codingisgame.tistory.com/1
@@ -291,4 +303,35 @@ https://www.w3schools.com/js/js_arrays.asp
 
 ### 객체 (objecr)
 
+> 프로그래밍 상의 데이터를 '객체'라는 개념으로 대상화 시키는 것
+>
 > - 객제지향 프로그램이라는 것이 있다. but 요즘에는 함수형 프로그래밍을 많이 한다.
+>
+> 객체
+>
+> - Property
+>
+>   - 객체가 가지고 있는 속성, 특성
+>
+> - Method (함수)
+>
+>   - 객체의 기능, 동작
+>
+> - 객체 데이터는 name : value 한 쌍으로 구성됨.
+>
+>   - name : value 형태는 key : value 형태로도 이야기 함.
+>
+> - 객체 method에서 this 키워드를 사용하면, mehtod 를 소유하고 있는(포함하는 개체를 가리킨다.)
+
+> 내장객체
+>
+> - js 에서 기본으로 가지고 있는 객체
+> - ex ) https://www.w3schools.com/js/js_dates.asp
+
+### Class
+
+https://www.w3schools.com/js/js_classes.asp
+
+> 객체 데이터를 여러개 생성할 수 있도록 하는 설계도
+>
+> new 키워드를 사용하여 객체 데이터를 생성

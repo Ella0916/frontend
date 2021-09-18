@@ -13,7 +13,7 @@
       console.log(number[1]);
       // 구분선 아래부터 루프 사용해서 반복 출력하기 //
 
-      for (let i = 0; i < 5; i++) {
+      for (let i = 0; i < number.length; i++) {
         console.log(number[i]);
       }
 
@@ -30,6 +30,11 @@
 
       // 배열 변수 전체 출력
       console.log(number);
+
+      number.push(100);
+      for (let i = 0; i < number.length; i++) {
+        console.log(number[i]);
+      }
     </script>
   </head>
   <body></body>
