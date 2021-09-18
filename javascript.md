@@ -335,3 +335,19 @@ https://www.w3schools.com/js/js_classes.asp
 > 객체 데이터를 여러개 생성할 수 있도록 하는 설계도
 >
 > new 키워드를 사용하여 객체 데이터를 생성
+
+## javascript 활용
+
+### JS Event
+
+> Event는 html 문서 내의 상태 변화에 따른 신호를 이벤트 라고 한다.
+
+> Mouse Event
+>
+> - click, mouse over, scroll
+>
+> Keyboard Event
+>
+> - key down(press), change
+>
+>   focus
