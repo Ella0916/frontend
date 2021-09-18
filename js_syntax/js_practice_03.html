@@ -11,7 +11,70 @@
         console.log("함수선언");
       }
       // 함수 호출
+
       myFunction();
+      function print1() {
+        console.log("true function");
+      }
+      function print2() {
+        console.log("fulse function");
+      }
+
+      if (3 < 5) {
+        print1();
+      } else {
+        print2();
+      }
+
+      // 재사용
+      let a = 0; // << 변수 선언
+
+      function print3(msg) {
+        let b = msg;
+        console.log(b);
+      } // << 함수를 선언해서 아래에 함수를 중복입력 하지 않아도 되게 함
+      // << 함수를 선언해서 그냥 'print3' 으로 값을 불러옴 (함수 전체 입력 x)
+
+      if (a > 5) {
+        print3("비교식 참");
+      } else if (a > 4) {
+        print3("비교식 참");
+      } else if (a > 3) {
+        print3("비교식 참");
+      } else {
+        print3("비교식 거짓");
+      }
+
+      // 매개변수 사용
+
+      function sum() {
+        console.log(3 + 5);
+      }
+
+      sum(); // << 3+5 한 결과가 나올 것
+
+      function sum1(a, b) {
+        console.log(a + b);
+      }
+
+      sum1(1, 4);
+      sum1(2, 4);
+      sum1(3, 4);
+      sum1(4, 4);
+      sum1(5, 4); // << 매개변수에 각 숫자가 대입되어 더해진 값이 나올 것
+
+      // return (반환)
+      function sum2(a, b) {
+        let s = 0;
+        s = a + b;
+        return s;
+      }
+
+      let total = sum3(3, 4); // 7로 나중에 되돌려 진다 (이 값을 받는 무언가가 또 필요함 > 변수 선언 )
+      // >> 결국 let total = 7; 인 것임 !! 리턴으로 7로 되돌려 받았으니까.
+
+      new Date().getDay(); // << 함수 ! 값 턴의 예
+      let = todayNumber = new Date().getDay(); // < 'new Date().getDay();' 값이 리턴되어 그 값이 또 함수에 적용되어 값이 도출되는 것
     </script>
   </head>
   <body></body>

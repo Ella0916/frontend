@@ -273,4 +273,5 @@ switch(expressions) {
 
 - 특정한 기능을 실행(독립적으로 실행)할 수 있는 여러 코드를 묶어놓은 블럭
 - 함수 선언 (declaration) : 함수 정의 (defination)
-- 함수 실행
+- 호출 (call) : 함수 실행
+- 재사용 가능
