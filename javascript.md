@@ -394,6 +394,10 @@ https://www.w3schools.com/html/html_forms.asp
 
 > External 과 Internal 방식으로 코딩을 하는 경우에는 Javascript 의 로딩 시점은 HTML 요소가 모두 로딩 (렌더링) 된 이후 이어야 함
 
+> script 태그에 defer attribute를 사용하면 script 태그 위치에 상관없이 html에 모두 로딩된 이후에 코드를 실행할 수 있음.
+
+> defer attribute 는 외부 파일을 불러올 때에만 가능하다는 점을 주의하자.
+
 ```
 
 1. External
@@ -413,4 +417,41 @@ https://www.w3schools.com/html/html_forms.asp
 <button type="button onclick="show();"> 버튼 </button>
 
 
+```
+
+### JS DOM
+
+https://www.w3schools.com/js/js_dom_examples.asp
+https://www.w3schools.com/js/js_htmldom.asp
+
+> DOM : Document Object Model
+>
+> - HTML 요소들이 객체로 생성된 것
+> - Javascript 에서 HTML 요소들을 제어하기 위해서 사용하는 것
+
+### JS DOM Access (DOM을 불러오는 방법)
+
+> HTML 4
+
+```
+document.getElementById('id');
+document.getElementByTagName('tag');
+document.getElementsByClassName('class');
+```
+
+> j Query (HTML4에 비해 불러오는 방법이 아주 간단. 함수가 같음 > \$.)
+
+```
+$('#id')
+$('tag')
+$('.class')
+```
+
+> HTML 5 (method 는 동일. 괄호 안 함수 값이 다름.)
+
+```
+document.querySelector('#id');
+document.querySelector('tag');
+document.querySelector('.class');
+document.qureySelectorAlL('class' or 'tag')
 ```
