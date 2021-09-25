@@ -6,6 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
+
+    <style>
+      .list {
+        border: 1px solid red;
+        width: 200px;
+        padding: 20px 10px;
+        list-style: none;
+      }
+      .list-item {
+        border: 1px solid blueviolet;
+        margin: 5px 0px;
+        padding: 10px;
+      }
+      .text-create {
+        width: 200px;
+        height: 30px;
+        box-sizing: border-box;
+      }
+      .btn-create {
+        border: 2px soli black;
+        width: 100px;
+        height: 30px;
+      }
+    </style>
+
     <script></script>
   </head>
   <body>
@@ -23,6 +48,15 @@
       <li class="list-item">section</li>
     </ul>
 
+    <div>
+      <input
+        type="text"
+        class="text-create"
+        placeholder="추가할 텍스트를 입력해 주세요"
+      />
+      <button type="button" class="btn-create">요소 추가</button>
+    </div>
+
     <!--DOM 에 Access-->
     <script>
       console.log(document.querySelector("#element01"));
@@ -32,6 +66,31 @@
       console.log(document.querySelectorAll(".list-item"));
       /*같은 class 여러개를 제어할 때는 qureySelectorAll을 써 준다 > HTML5에서는 개수의 영향 받음.*/
       /*All을 뒤에 쓰지 않으면 제일 처음에 있는 class 값만 제어됨.*/
+
+      // Event, Event Handler/Listener
+
+      //1. Event 가 발생되는 대상 (HTML DOM) 찾기 (Access)
+      const buttonCreate = document.querySelector(".btn-create");
+
+      //2. Event 가 발생되는 DOM에 포함된 Event Listener 사용하기
+      let addNode = () => {
+        // DOM Create (추가하기)
+        const listItem = document.createElement("li");
+
+        // const listText = document.createTextNode("article");
+        const inputText = document.querySelector(".text-create");
+        const listText = document.createTextNode(inputText.value);
+
+        listItem.appendChild(listText);
+        listItem.classList.add("list-item"); // create 한 DOM에 Class 넣기 //
+
+        // DOM Create (불러오기)
+        const list = document.querySelector(".list");
+        list.appendChild(listItem);
+      };
+
+      // 함수의 매개변수 값으로 함수를 넣어줄 때, 함수 이름만 넣어줌(괄호를 생략) > 'addNode'
+      buttonCreate.addEventListener("click", addNode);
     </script>
   </body>
 </html>
