@@ -338,6 +338,10 @@ https://www.w3schools.com/js/js_classes.asp
 
 ## javascript 활용
 
+https://www.w3schools.com/html/html_forms.asp
+
+> html 에서 form 요소와 연관지어 생각할 수 있음
+
 ### JS Event
 
 > Event는 html 문서 내의 상태 변화에 따른 신호를 이벤트 라고 한다.
@@ -351,3 +355,62 @@ https://www.w3schools.com/js/js_classes.asp
 > - key down(press), change
 >
 >   focus
+
+## js form
+
+https://www.w3schools.com/html/html_form_input_types.asp
+https://www.w3schools.com/html/html_forms.asp
+
+> form 요소는 서버측에 데이터를 전달할 때 사용자의 입력을 받을 수 있는 요소
+
+```
+<input type="text">
+<input type="password">
+<input type="radio">
+
+<select>
+  <option>HTML</option>
+  <option>CSS</option>
+</select>
+
+<button type="button">save</button>
+```
+
+> input vs button
+> 기능상의 차이는 없다 but html 요소 구성의 차이가 있다.
+>
+> - input : 빈요소 (종료테그가 없다.)
+> - button : 시작 / 종료 테그로 구성됨
+> - input 버튼은 컨텐츠 구성시 value attribute 를 사용해야 하기 때문에 제약이 있다.
+> - button 버튼은 컨텐츠 구성시 제약이 없다. (시작 종료테그 사이에 컨텐츠 마음대로 넣을 수 있다.)
+
+## js 작성방식
+
+> HTML, CSS와 Javascript가 같이 가용될 때 3가지가 제대로 적용되기 위한 작성
+
+> - External : js 파일을 따로 생성하는 것 - 외부 파일
+> - Internal : html 문서 내에 script 테그를 사용하여 코드를 작성하는 방식
+> - inline : html element에 javascript 코드를 직접 작성하는 경우
+
+> External 과 Internal 방식으로 코딩을 하는 경우에는 Javascript 의 로딩 시점은 HTML 요소가 모두 로딩 (렌더링) 된 이후 이어야 함
+
+```
+
+1. External
+
+<script src="function.js"></script>
+
+
+2. internal
+
+<script>
+  console.log(123);
+</script>
+
+
+3. inline
+
+<button type="button onclick="show();"> 버튼 </button>
+
+
+```
