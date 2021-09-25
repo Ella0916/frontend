@@ -29,6 +29,13 @@
         width: 100px;
         height: 30px;
       }
+
+      .list-item > span {
+        display: inline-block;
+        border: 1px solid #999;
+        padding: 5px;
+        margin-right: 10px;
+      }
     </style>
 
     <script></script>
@@ -43,9 +50,9 @@
 
     <div>HTML symantic 요소 목록</div>
     <ul class="list">
-      <li class="list-item">header</li>
-      <li class="list-item">footer</li>
-      <li class="list-item">section</li>
+      <li class="list-item"><span>1</span>header</li>
+      <li class="list-item"><span>2</span>footer</li>
+      <li class="list-item"><span>3</span>section</li>
     </ul>
 
     <div>
@@ -55,6 +62,21 @@
         placeholder="추가할 텍스트를 입력해 주세요"
       />
       <button type="button" class="btn-create">요소 추가</button>
+    </div>
+    <br />
+    <div>
+      <button type="button" class="btn-read">요소내용표시</button>
+      <span class="text-read"></span>
+    </div>
+    <div>
+      <input
+        type="text"
+        class="index-delete"
+        placeholder="삭제할 번호를 입력해 주세요."
+      />
+      <button type="button" class="btn-delete">
+        삭제
+      </button>
     </div>
 
     <!--DOM 에 Access-->
@@ -77,6 +99,12 @@
         // DOM Create (추가하기)
         const listItem = document.createElement("li");
 
+        const indexSpan = document.createElement("span");
+        const listNumber = document.querySelectorAll(".list-item").length;
+        const indexNumber = document.createTextNode(listNumber + 1);
+        indexSpan.appendChild(indexNumber);
+        listItem.appendChild(indexSpan);
+
         // const listText = document.createTextNode("article");
         const inputText = document.querySelector(".text-create");
         const listText = document.createTextNode(inputText.value);
@@ -91,6 +119,35 @@
 
       // 함수의 매개변수 값으로 함수를 넣어줄 때, 함수 이름만 넣어줌(괄호를 생략) > 'addNode'
       buttonCreate.addEventListener("click", addNode);
+
+      const buttonRead = document.querySelector(".btn-read");
+      buttonRead.addEventListener("click", function () {
+        const listItemAll = document.querySelectorAll(".list-item");
+        const textRead = document.querySelector(".text-read");
+        let textValue = "";
+
+        for (let i = 0; i < listItemAll.length; i++) {
+          /*
+      const textNode = document.createTextNode(
+        listItemAll[i].innerHTML + " "
+      );
+      textRead.appendChild(textNode);
+      */
+
+          textValue = textValue + listItemAll[i].innerHTML + " ";
+        }
+        textRead.innerHTML = textValue;
+      });
+
+      // Delete
+      const buttonDelete = document.querySelector(".btn-delete");
+      buttonDelete.addEventListener("click", function () {
+        const indexDelete = document.querySelector(".index-delete").value - 1;
+        const listParent = document.querySelector(".list");
+        const listItem = document.querySelectorAll(".list-item");
+
+        listParent.removeChild(listItem[indexDelete]);
+      });
     </script>
   </body>
 </html>
