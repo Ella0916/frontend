@@ -497,3 +497,28 @@ div.name1 : div element가 name1 class이름을 가지고 있는 경우
 
 
 ```
+
+### CSS Position
+
+> 박스를 단독으로 좌표값을 이용해서 위치를 설정
+>
+> - 5가지 종류
+> - static
+> - relative
+> - absolute
+> - fixed
+> - sticky
+
+> relative
+>
+> - 원래 위치의 자리를 그대로 유지하면서 원래 위치를 기준으로 좌표 이동
+
+> absolute
+>
+> - 원래 위치의 자리를 유지하지 않고 부모를 기준으로 좌표 이동
+> - 기본 : body를 기준
+> - 부모요소에 포지션 속성을 적용한 경우 : 인접한 부모요소를 기준
+
+> fixed
+>
+> - 위치 기준 : 브라우저

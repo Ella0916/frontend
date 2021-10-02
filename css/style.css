@@ -156,6 +156,11 @@ table {
 .gnb-link:hover {
   color: #10c9c3;
 }
+
+.hamburger {
+  display: none;
+}
+
 .section01 {
   background-color: #f6f6f6;
   /* 높이가 320이면 그냥 패딩값을 160으로 줘도 되는거 아닌지? */
@@ -263,6 +268,15 @@ table {
 
 /* smart phone */
 @media screen and (max-width: 767px) {
+  .header {
+    height: 50px;
+    padding: 12px 20px 0px;
+  }
+
+  .gnb {
+    position: absolute;
+  }
+
   .section01 {
     padding-top: 80px;
   }
