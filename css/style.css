@@ -162,6 +162,18 @@ table {
   display: none;
 }
 
+.slide {
+  position: absolute;
+  width: 100%;
+  top: 100px;
+  left: 0;
+  opacity: 0;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
 .section01 {
   background-color: #f6f6f6;
   /* 높이가 320이면 그냥 패딩값을 160으로 줘도 되는거 아닌지? */
@@ -169,6 +181,7 @@ table {
   padding-top: 100px;
   box-sizing: border-box;
   min-width: 1360px;
+  position: relative;
 }
 
 .section-heading {
@@ -355,6 +368,7 @@ table {
   .section01 {
     padding-top: 80px;
     margin-top: 50px;
+    position: relative;
   }
 
   .section-heading {
