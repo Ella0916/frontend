@@ -41,42 +41,62 @@
     <script></script>
   </head>
   <body>
-    <h1>Dom Create, Read, Update, Delete (CRUD)</h1>
+    <h1>DOM Create, Read, Update, Delete(CRUD)</h1>
 
     <div id="element01">HTML 요소1</div>
     <p class="element01">HTML 요소2</p>
     <div class="element02">HTML 요소3</div>
-    <br />
 
-    <div>HTML symantic 요소 목록</div>
+    <div>HTML Semantic 요소 목록</div>
     <ul class="list">
-      <li class="list-item"><span>1</span>header</li>
-      <li class="list-item"><span>2</span>footer</li>
-      <li class="list-item"><span>3</span>section</li>
+      <li class="list-item">
+        <span class="list-index">1</span><span class="list-text">header</span>
+      </li>
+      <li class="list-item">
+        <span class="list-index">2</span><span class="list-text">footer</span>
+      </li>
+      <li class="list-item">
+        <span class="list-index">3</span><span class="list-text">section</span>
+      </li>
     </ul>
-
     <div>
       <input
         type="text"
         class="text-create"
-        placeholder="추가할 텍스트를 입력해 주세요"
+        placeholder="추가할 텍스트를 입력해주세요."
       />
-      <button type="button" class="btn-create">요소 추가</button>
+      <button type="button" class="btn-create">요소추가</button>
     </div>
     <br />
     <div>
       <button type="button" class="btn-read">요소내용표시</button>
       <span class="text-read"></span>
     </div>
+    <br />
+
+    <div>
+      <input
+        type="text"
+        class="index-update"
+        placeholder="수정할 번호를 입력해주세요."
+      />
+      <input
+        type="text"
+        class="text-update"
+        placeholder="수정할 텍스트를 입력해주세요."
+      />
+      <button type="button" class="btn-update">요소수정</button>
+    </div>
+
+    <br />
+
     <div>
       <input
         type="text"
         class="index-delete"
-        placeholder="삭제할 번호를 입력해 주세요."
+        placeholder="삭제할 번호를 입력해주세요."
       />
-      <button type="button" class="btn-delete">
-        삭제
-      </button>
+      <button type="button" class="btn-delete">요소삭제</button>
     </div>
 
     <!--DOM 에 Access-->
@@ -100,16 +120,23 @@
         const listItem = document.createElement("li");
 
         const indexSpan = document.createElement("span");
+
         const listNumber = document.querySelectorAll(".list-item").length;
         const indexNumber = document.createTextNode(listNumber + 1);
         indexSpan.appendChild(indexNumber);
+        indexSpan.classList.add("list-index");
         listItem.appendChild(indexSpan);
 
         // const listText = document.createTextNode("article");
         const inputText = document.querySelector(".text-create");
         const listText = document.createTextNode(inputText.value);
 
-        listItem.appendChild(listText);
+        const textSpan = document.createElement("span");
+
+        textSpan.appendChild(listText);
+        textSpan.classList.add("list-index");
+        listItem.appendChild(textSpan);
+
         listItem.classList.add("list-item"); // create 한 DOM에 Class 넣기 //
 
         // DOM Create (불러오기)
@@ -120,6 +147,7 @@
       // 함수의 매개변수 값으로 함수를 넣어줄 때, 함수 이름만 넣어줌(괄호를 생략) > 'addNode'
       buttonCreate.addEventListener("click", addNode);
 
+      // Read
       const buttonRead = document.querySelector(".btn-read");
       buttonRead.addEventListener("click", function () {
         const listItemAll = document.querySelectorAll(".list-item");
@@ -128,15 +156,29 @@
 
         for (let i = 0; i < listItemAll.length; i++) {
           /*
-      const textNode = document.createTextNode(
-        listItemAll[i].innerHTML + " "
-      );
-      textRead.appendChild(textNode);
-      */
+        const textNode = document.createTextNode(
+          listItemAll[i].innerHTML + " "
+        );
+        textRead.appendChild(textNode);
+        */
 
           textValue = textValue + listItemAll[i].innerHTML + " ";
         }
         textRead.innerHTML = textValue;
+      });
+
+      // Update
+      const buttonUpdate = document.querySelector(".btn-update");
+      buttonUpdate.addEventListener("click", function () {
+        const indexUpdate = document.querySelector(".index-update").value - 1;
+        const textUpdate = document.querySelector(".text-update").value;
+
+        const listParent = document.querySelector(".list");
+        const listItem = document.querySelectorAll(".list-item");
+
+        listItem[indexUpdate].querySelector(
+          ".list-text"
+        ).innerHTML = textUpdate;
       });
 
       // Delete
@@ -144,9 +186,14 @@
       buttonDelete.addEventListener("click", function () {
         const indexDelete = document.querySelector(".index-delete").value - 1;
         const listParent = document.querySelector(".list");
-        const listItem = document.querySelectorAll(".list-item");
+        let listItem = document.querySelectorAll(".list-item");
 
         listParent.removeChild(listItem[indexDelete]);
+
+        listItem = document.querySelectorAll(".list-item");
+        for (let i = 0; i < listItem.length; i++) {
+          listItem[i].querySelector(".list-index").innerHTML = i + 1;
+        }
       });
     </script>
   </body>
